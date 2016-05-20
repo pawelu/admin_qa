@@ -62,3 +62,13 @@ or
 
 
 #####  Boot from any other source (network book, cd, etc.) and use the chmod on that source to set the permissions
+
+#### You have deleted by error a running script, what could you do to restore it?
+
+get pid of running script process (`ps aux`)
+
+`cd /proc/[process_id]/fd`
+
+there should be link to deleted file, e.g.: `255 -> /home/user1/script.sh (deleted)`
+
+save link content to file: `cat 255 > ~/script_restored.sh`
