@@ -49,4 +49,5 @@ SSH, or Secure Shell, is a protocol used to securely log onto remote systems.
 #### How to get all environment variables and how can you use them?
 
 `env`
+
 `printenv`
